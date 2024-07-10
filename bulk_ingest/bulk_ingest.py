@@ -78,7 +78,7 @@ def deserialize_to_dict(item):
 
 print("hi")
 while True:
-    redis_resp = redis_client.lpop("hn22", num_to_pop)
+    redis_resp = redis_client.lpop("hn", num_to_pop)
 
     # Check if item ID is already present
     if redis_resp is None:

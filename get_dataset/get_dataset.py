@@ -20,4 +20,4 @@ while True:
     print(item)
     if (not fail and (item is not None) and ("deleted" not in item) and ("dead" not in item)):
         print(start)
-        redis_client.lpush("hn22", str(item))
+        redis_client.lpush("hn", str(item))
